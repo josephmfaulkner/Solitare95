@@ -8,14 +8,75 @@
   <name>Solitare Maven Webapp</name>
   <url>http://maven.apache.org</url>
   <dependencies>
-    <dependency>
-      <groupId>junit</groupId>
-      <artifactId>junit</artifactId>
-      <version>3.8.1</version>
-      <scope>test</scope>
-    </dependency>
+    
+	
+	  <!-- logging , spring 5 no more bridge, thanks spring-jcl -->
+	  <dependency>
+	      <groupId>ch.qos.logback</groupId>
+	      <artifactId>logback-classic</artifactId>
+	      <version>1.2.3</version>
+	  </dependency>
+	
+	  <!-- junit 5, unit test -->
+	  <dependency>
+	      <groupId>org.junit.jupiter</groupId>
+	      <artifactId>junit-jupiter-engine</artifactId>
+	      <version>5.3.1</version>
+	      <scope>test</scope>
+	  </dependency>
+	
+	  <!-- unit test -->
+	  <dependency>
+	      <groupId>org.hamcrest</groupId>
+	      <artifactId>hamcrest-library</artifactId>
+	      <version>1.3</version>
+	      <scope>test</scope>
+	  </dependency>
+	
+	  <!-- for web servlet -->
+	  <dependency>
+	      <groupId>javax.servlet</groupId>
+	      <artifactId>javax.servlet-api</artifactId>
+	      <version>3.1.0</version>
+	      <scope>provided</scope>
+	  </dependency>
+	
+	  <!-- Some containers like Tomcat don't have jstl library -->
+	  <dependency>
+	      <groupId>javax.servlet</groupId>
+	      <artifactId>jstl</artifactId>
+	      <version>1.2</version>
+	      <scope>provided</scope>
+	  </dependency>
+    
   </dependencies>
   <build>
     <finalName>Solitare</finalName>
+    
+    <plugins>
+	    <!-- http://www.eclipse.org/jetty/documentation/current/jetty-maven-plugin.html -->
+	    <plugin>
+	        <groupId>org.eclipse.jetty</groupId>
+	        <artifactId>jetty-maven-plugin</artifactId>
+	        <version>9.4.12.v20180830</version>
+	    </plugin>
+	
+	    <!-- Default is too old, update to latest to run the latest Spring 5 + jUnit 5 -->
+	    <plugin>
+	        <groupId>org.apache.maven.plugins</groupId>
+	        <artifactId>maven-surefire-plugin</artifactId>
+	        <version>2.22.0</version>
+	    </plugin>
+	
+	    <!-- Default 2.2 is too old, update to latest -->
+	    <plugin>
+	        <groupId>org.apache.maven.plugins</groupId>
+	        <artifactId>maven-war-plugin</artifactId>
+	        <version>3.2.2</version>
+	    </plugin>
+	
+	</plugins>
+ 
+    
   </build>
 </project>
