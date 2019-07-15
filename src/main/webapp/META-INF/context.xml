@@ -1,0 +1,14 @@
+<Context>
+	<Resource
+		name="jdbc/webappdb"
+		auth="Container"
+		type="javax.sql.DataSource"
+		maxActive="5"
+		maxIdle="20"
+		maxWait="10000"
+		username="user"
+		password="password"
+		driverClassName="com.mysql.jdbc.Driver"
+		url="jdbc:mysql://database:3306/webappdb" 
+	/>
+</Context>
