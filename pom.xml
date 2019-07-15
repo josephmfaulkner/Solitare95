@@ -58,6 +58,8 @@
 	  
     
   </dependencies>
+  
+  
   <build>
     <finalName>Solitare</finalName>
     
@@ -82,7 +84,22 @@
 	        <artifactId>maven-war-plugin</artifactId>
 	        <version>3.2.2</version>
 	    </plugin>
-	
+	    
+	    <plugin>
+            <groupId>com.fizzed</groupId>
+            <artifactId>fizzed-watcher-maven-plugin</artifactId>
+            <version>1.0.4</version>
+            <configuration>
+                <files>
+                    <param>src/</param>
+                </files>
+                <goals>
+                    <param>clean</param>
+                    <param>install</param>
+                </goals>
+            </configuration>
+        </plugin>
+	    
 	</plugins>
  
     

@@ -1,4 +1,6 @@
-<Context>
+<Context 
+	reloadable="true"
+>
 	<Resource
 		name="jdbc/webappdb"
 		auth="Container"

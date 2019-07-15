@@ -52,7 +52,7 @@ public class TestDBConnection extends HttpServlet {
 				int id = results.getInt("ID");
 				String name = results.getString("NAME");
 				
-				response.getWriter().print("<br>" + id + ": " + name);
+				response.getWriter().print(id + " - " + name);
 				
 			}
 			
