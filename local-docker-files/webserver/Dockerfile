@@ -5,6 +5,8 @@ MAINTAINER Sophia Parafina <sophia.parafina@docker.com>
 # tomcat-users.xml sets up user accounts for the Tomcat manager GUI
 # and script access for Maven deployments
 ADD tomcat/tomcat-users.xml $CATALINA_HOME/conf/
+ADD tomcat/server.xml /usr/local/tomcat/conf
+ADD tomcat/context.xml /usr/local/tomcat/conf
 
 # ADD tomcat/catalina.sh $CATALINA_HOME/bin/
 ADD tomcat/run.sh $CATALINA_HOME/bin/run.sh

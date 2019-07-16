@@ -7,9 +7,11 @@ services:
       context: ./local-docker-files/webserver
     image: webserver
     # mount point for application in tomcat
-    volumes:
-      - ./target/Solitare:/usr/local/tomcat/webapps/Solitare
-    # open ports for tomcat and remote debugging
+    
+    #volumes:
+    #  - ./target/Solitare:/usr/local/tomcat/webapps/Solitare
+    
+      # open ports for tomcat and remote debugging
     ports:
       - "8080:8080" 
       - "8000:8000"

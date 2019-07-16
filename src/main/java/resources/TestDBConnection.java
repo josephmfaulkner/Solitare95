@@ -54,6 +54,7 @@ public class TestDBConnection extends HttpServlet {
 				
 				response.getWriter().print(id + " - " + name);
 				
+				
 			}
 			
 			connection.close();
