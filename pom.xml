@@ -65,7 +65,7 @@
   
   <build>
     <finalName>Solitare</finalName>
-    <defaultGoal>fizzed-watcher:run</defaultGoal>
+    <defaultGoal>clean install tomcat7:redeploy fizzed-watcher:run</defaultGoal>
     <plugins>
 	    <!-- http://www.eclipse.org/jetty/documentation/current/jetty-maven-plugin.html -->
 	    <plugin>
