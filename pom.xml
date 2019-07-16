@@ -8,7 +8,45 @@
   <name>Solitare Maven Webapp</name>
   <url>http://maven.apache.org</url>
   
-
+  <properties>
+    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    <junit5.version>5.1.1</junit5.version>
+  </properties>
+  
+  
+  <profiles>
+    <profile>
+        <id>eclipse</id>
+        <dependencies>
+            <dependency>
+                <groupId>org.junit.jupiter</groupId>
+                <artifactId>junit-jupiter-engine</artifactId>
+            </dependency>
+            <dependency>
+                <groupId>org.junit.platform</groupId>
+                <artifactId>junit-platform-launcher</artifactId>
+            </dependency>
+        </dependencies>
+        <dependencyManagement>
+            <dependencies>
+                <dependency>
+                    <groupId>org.junit.jupiter</groupId>
+                    <artifactId>junit-jupiter-engine</artifactId>
+                    <version>${junit5.version}</version>
+                    <scope>test</scope>
+                </dependency>
+                <dependency>
+                    <groupId>org.junit.platform</groupId>
+                    <artifactId>junit-platform-launcher</artifactId>
+                    <version>1.1.1</version>
+                    <scope>test</scope>
+                </dependency>
+            </dependencies>
+        </dependencyManagement>
+    </profile>
+</profiles>
+  
+  
   
   <dependencies>
     
@@ -19,16 +57,17 @@
 	      <artifactId>logback-classic</artifactId>
 	      <version>1.2.3</version>
 	  </dependency>
+	  
+      <dependency>
+          <groupId>org.junit.jupiter</groupId>
+          <artifactId>junit-jupiter-engine</artifactId>
+      </dependency>
+      <dependency>
+          <groupId>org.junit.platform</groupId>
+          <artifactId>junit-platform-launcher</artifactId>
+      </dependency>
 	
-	  <!-- junit 5, unit test -->
-	  <dependency>
-	      <groupId>org.junit.jupiter</groupId>
-	      <artifactId>junit-jupiter-engine</artifactId>
-	      <version>5.3.1</version>
-	      <scope>test</scope>
-	  </dependency>
-	
-	  <!-- unit test -->
+	  
 	  <dependency>
 	      <groupId>org.hamcrest</groupId>
 	      <artifactId>hamcrest-library</artifactId>
@@ -61,6 +100,23 @@
 	  
     
   </dependencies>
+  
+  <dependencyManagement>
+      <dependencies>
+          <dependency>
+              <groupId>org.junit.jupiter</groupId>
+              <artifactId>junit-jupiter-engine</artifactId>
+              <version>${junit5.version}</version>
+              <scope>test</scope>
+          </dependency>
+          <dependency>
+              <groupId>org.junit.platform</groupId>
+              <artifactId>junit-platform-launcher</artifactId>
+              <version>1.1.1</version>
+              <scope>test</scope>
+          </dependency>
+      </dependencies>
+  </dependencyManagement>
   
   
   <build>
