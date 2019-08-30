@@ -85,5 +85,16 @@ public class Card {
 		return difference; 
 	};
 	
+	public boolean equals (Card otherCard) {
+		boolean sameSide  = this.facing == otherCard.facing; 
+		boolean sameColor = sameColor(otherCard);
+		boolean sameRank  = compareRank(otherCard) == 0;
+		boolean sameSuite = this.rank == otherCard.rank;
+		
+		boolean result = sameSide && sameColor && sameRank && sameSuite;
+		
+		return result; 
+	}
+	
 	
 }
