@@ -16,6 +16,9 @@ class TestStackSerializer {
 		CardDeck deck = new CardDeckFactory().makeNewDeck();
 		
 		String serializedDeck = stackSerializer.serialize(deck);
+		
+		System.out.print(serializedDeck);
+		
 		CardDeck deSerializedDeck = new CardDeck(stackSerializer.deserialize(serializedDeck));
 		
 		Boolean stacksEqual = deck.equals(deSerializedDeck);
