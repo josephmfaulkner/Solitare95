@@ -23,6 +23,26 @@ public class GameBoard {
 		CardStack tableau6,
 		CardStack tableau7
 	) {
+		
+		boolean nullToConstructor = (deck == null);
+		nullToConstructor = (deck == null)        || nullToConstructor; 
+		nullToConstructor = (foundation1 == null) || nullToConstructor; 
+		nullToConstructor = (foundation2 == null) || nullToConstructor; 
+		nullToConstructor = (foundation3 == null) || nullToConstructor; 
+		nullToConstructor = (foundation4 == null) || nullToConstructor; 
+		nullToConstructor = (tableau1 == null)    || nullToConstructor; 
+		nullToConstructor = (tableau2 == null)    || nullToConstructor; 
+		nullToConstructor = (tableau3 == null)    || nullToConstructor; 
+		nullToConstructor = (tableau4 == null)    || nullToConstructor; 
+		nullToConstructor = (tableau5 == null)    || nullToConstructor; 
+		nullToConstructor = (tableau6 == null)    || nullToConstructor; 
+		nullToConstructor = (tableau7 == null)    || nullToConstructor; 
+		
+		if(nullToConstructor) {
+			throw new RuntimeException("null cannot be passed to constructor");
+		}
+
+		
 		this.foundation = new CardStack[4];
 		this.tableau    = new CardStack[7];
 		

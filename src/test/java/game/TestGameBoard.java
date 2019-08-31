@@ -121,5 +121,5 @@ class TestGameBoard {
 	        assertEquals(exception.getMessage(), "Invalid Tableau: 8");
 	    }
 	}
-
+	
 }
