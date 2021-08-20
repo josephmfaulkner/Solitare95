@@ -13,37 +13,28 @@ public class GameBoardPrinter
         StringBuilder stringBuilder = new StringBuilder(); 
 
         stringBuilder.append(cardStackSerializer.serialize(gameBoard.getDeck()));
-        stringBuilder.append("</br>");
-        stringBuilder.append("</br>");
-
+        stringBuilder.append("_");
         stringBuilder.append(cardStackSerializer.serialize(gameBoard.getFoundation(1)));
-        stringBuilder.append("</br>");
+        stringBuilder.append("_");
         stringBuilder.append(cardStackSerializer.serialize(gameBoard.getFoundation(2)));
-        stringBuilder.append("</br>");
+        stringBuilder.append("_");
         stringBuilder.append(cardStackSerializer.serialize(gameBoard.getFoundation(3)));
-        stringBuilder.append("</br>");
+        stringBuilder.append("_");
         stringBuilder.append(cardStackSerializer.serialize(gameBoard.getFoundation(4)));
-        stringBuilder.append("</br>");
-        stringBuilder.append("</br>");
-        stringBuilder.append("</br>");
-        stringBuilder.append("</br>");
-        
+        stringBuilder.append("_");
         stringBuilder.append(cardStackSerializer.serialize(gameBoard.getTableau(1)));
-        stringBuilder.append("</br>");
+        stringBuilder.append("_");
         stringBuilder.append(cardStackSerializer.serialize(gameBoard.getTableau(2)));
-        stringBuilder.append("</br>");
+        stringBuilder.append("_");
         stringBuilder.append(cardStackSerializer.serialize(gameBoard.getTableau(3)));
-        stringBuilder.append("</br>");
+        stringBuilder.append("_");
         stringBuilder.append(cardStackSerializer.serialize(gameBoard.getTableau(4)));
-        stringBuilder.append("</br>");
+        stringBuilder.append("_");
         stringBuilder.append(cardStackSerializer.serialize(gameBoard.getTableau(5)));
-        stringBuilder.append("</br>");
+        stringBuilder.append("_");
         stringBuilder.append(cardStackSerializer.serialize(gameBoard.getTableau(6)));
-        stringBuilder.append("</br>");
+        stringBuilder.append("_");
         stringBuilder.append(cardStackSerializer.serialize(gameBoard.getTableau(7)));
-        stringBuilder.append("</br>");
-        stringBuilder.append("</br>");
-        stringBuilder.append("</br>");
 
         return stringBuilder.toString();
     }
