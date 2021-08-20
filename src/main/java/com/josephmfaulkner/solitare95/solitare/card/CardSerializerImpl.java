@@ -149,7 +149,6 @@ public class CardSerializerImpl implements CardSerializer{
 		}
 		
 		
-		
 		switch(suiteCH) {
 			case '♣':
 				cardSuite = Suite.CLUBS; 
@@ -168,10 +167,10 @@ public class CardSerializerImpl implements CardSerializer{
 		}
 		
 		switch(faceCH) {
-			case 'U':
+			case '↑':
 				cardFacing = Facing.UP; 
 				break; 
-			case 'D':
+			case '↓':
 				cardFacing = Facing.DOWN; 
 				break; 
 			default: 
