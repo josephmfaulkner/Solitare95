@@ -1,6 +1,6 @@
 package com.josephmfaulkner.solitare95.utility;
 
-import com.josephmfaulkner.solitare95.solitare.card.Card;
+import com.josephmfaulkner.solitare95.core.card.Card;
 
 public class GuiUtils {
 

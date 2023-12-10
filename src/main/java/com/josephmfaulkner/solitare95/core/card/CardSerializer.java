@@ -1,4 +1,4 @@
-package com.josephmfaulkner.solitare95.solitare.card;
+package com.josephmfaulkner.solitare95.core.card;
 
 public interface CardSerializer {
 	public String serialize(Card card);

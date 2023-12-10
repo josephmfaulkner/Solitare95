@@ -4,8 +4,8 @@ import static org.junit.jupiter.api.Assertions.*;
 
 import org.junit.jupiter.api.Test;
 
-import com.josephmfaulkner.solitare95.gameboard.GameBoard;
-import com.josephmfaulkner.solitare95.gameboard.GameBoardFactory;
+import com.josephmfaulkner.solitare95.core.gameboard.GameBoard;
+import com.josephmfaulkner.solitare95.core.gameboard.GameBoardFactory;
 
 class TestGameBoardFactory {
 	

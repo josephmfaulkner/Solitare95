@@ -1,8 +1,8 @@
-package com.josephmfaulkner.solitare95.solitare.cardstack;
+package com.josephmfaulkner.solitare95.core.cardstack;
 
-import com.josephmfaulkner.solitare95.solitare.card.Card;
-import com.josephmfaulkner.solitare95.solitare.card.CardSerializer;
-import com.josephmfaulkner.solitare95.solitare.card.CardSerializerImpl;
+import com.josephmfaulkner.solitare95.core.card.Card;
+import com.josephmfaulkner.solitare95.core.card.CardSerializer;
+import com.josephmfaulkner.solitare95.core.card.CardSerializerImpl;
 
 public class CardStackSerializerImpl implements CardStackSerializer{
 	

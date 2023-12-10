@@ -1,8 +1,8 @@
 package com.josephmfaulkner.solitare95.utility;
 
-import com.josephmfaulkner.solitare95.gameboard.GameBoard;
-import com.josephmfaulkner.solitare95.solitare.cardstack.CardStackSerializer;
-import com.josephmfaulkner.solitare95.solitare.cardstack.CardStackSerializerImpl;
+import com.josephmfaulkner.solitare95.core.cardstack.CardStackSerializer;
+import com.josephmfaulkner.solitare95.core.cardstack.CardStackSerializerImpl;
+import com.josephmfaulkner.solitare95.core.gameboard.GameBoard;
 
 public class GameBoardPrinter 
 {

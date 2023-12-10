@@ -1,8 +1,8 @@
-package com.josephmfaulkner.solitare95.gameboard;
+package com.josephmfaulkner.solitare95.core.gameboard;
 
-import com.josephmfaulkner.solitare95.solitare.cardstack.CardDeck;
-import com.josephmfaulkner.solitare95.solitare.cardstack.CardDeckFactory;
-import com.josephmfaulkner.solitare95.solitare.cardstack.CardStack;
+import com.josephmfaulkner.solitare95.core.cardstack.CardDeck;
+import com.josephmfaulkner.solitare95.core.cardstack.CardDeckFactory;
+import com.josephmfaulkner.solitare95.core.cardstack.CardStack;
 
 public class GameBoardFactory {
 	public static GameBoard makeGameBoard(CardDeck deck) {	

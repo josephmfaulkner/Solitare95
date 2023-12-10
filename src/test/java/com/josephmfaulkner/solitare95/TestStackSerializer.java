@@ -4,10 +4,10 @@ import static org.junit.jupiter.api.Assertions.*;
 
 import org.junit.jupiter.api.Test;
 
-import com.josephmfaulkner.solitare95.solitare.cardstack.CardDeck;
-import com.josephmfaulkner.solitare95.solitare.cardstack.CardDeckFactory;
-import com.josephmfaulkner.solitare95.solitare.cardstack.CardStackSerializer;
-import com.josephmfaulkner.solitare95.solitare.cardstack.CardStackSerializerImpl;
+import com.josephmfaulkner.solitare95.core.cardstack.CardDeck;
+import com.josephmfaulkner.solitare95.core.cardstack.CardDeckFactory;
+import com.josephmfaulkner.solitare95.core.cardstack.CardStackSerializer;
+import com.josephmfaulkner.solitare95.core.cardstack.CardStackSerializerImpl;
 
 class TestStackSerializer {
 

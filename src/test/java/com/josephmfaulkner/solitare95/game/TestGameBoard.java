@@ -5,10 +5,10 @@ import static org.junit.jupiter.api.Assertions.*;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
-import com.josephmfaulkner.solitare95.solitare.cardstack.CardDeck;
-import com.josephmfaulkner.solitare95.solitare.cardstack.CardDeckFactory;
-import com.josephmfaulkner.solitare95.solitare.cardstack.CardStack;
-import com.josephmfaulkner.solitare95.gameboard.GameBoard;
+import com.josephmfaulkner.solitare95.core.cardstack.CardDeck;
+import com.josephmfaulkner.solitare95.core.cardstack.CardDeckFactory;
+import com.josephmfaulkner.solitare95.core.cardstack.CardStack;
+import com.josephmfaulkner.solitare95.core.gameboard.GameBoard;
 
 class TestGameBoard {
 

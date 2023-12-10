@@ -5,12 +5,12 @@ import static org.junit.jupiter.api.Assertions.*;
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.Test;
 
-import com.josephmfaulkner.solitare95.solitare.card.Card;
-import com.josephmfaulkner.solitare95.solitare.card.Card.Facing;
-import com.josephmfaulkner.solitare95.solitare.card.Card.Rank;
-import com.josephmfaulkner.solitare95.solitare.card.Card.Suite;
-import com.josephmfaulkner.solitare95.solitare.card.CardSerializer;
-import com.josephmfaulkner.solitare95.solitare.card.CardSerializerImpl;
+import com.josephmfaulkner.solitare95.core.card.Card;
+import com.josephmfaulkner.solitare95.core.card.CardSerializer;
+import com.josephmfaulkner.solitare95.core.card.CardSerializerImpl;
+import com.josephmfaulkner.solitare95.core.card.Card.Facing;
+import com.josephmfaulkner.solitare95.core.card.Card.Rank;
+import com.josephmfaulkner.solitare95.core.card.Card.Suite;
 
 class TestCardSerializer {
 

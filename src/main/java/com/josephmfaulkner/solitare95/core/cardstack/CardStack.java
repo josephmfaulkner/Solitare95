@@ -1,8 +1,8 @@
-package com.josephmfaulkner.solitare95.solitare.cardstack;
+package com.josephmfaulkner.solitare95.core.cardstack;
 
 import java.util.LinkedList;
 
-import com.josephmfaulkner.solitare95.solitare.card.Card;
+import com.josephmfaulkner.solitare95.core.card.Card;
 
 public class CardStack {
 	protected LinkedList<Card> cards; 

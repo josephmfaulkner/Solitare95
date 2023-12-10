@@ -1,8 +1,8 @@
-package com.josephmfaulkner.solitare95.solitare.card;
+package com.josephmfaulkner.solitare95.core.card;
 
-import com.josephmfaulkner.solitare95.solitare.card.Card.Facing;
-import com.josephmfaulkner.solitare95.solitare.card.Card.Rank;
-import com.josephmfaulkner.solitare95.solitare.card.Card.Suite;
+import com.josephmfaulkner.solitare95.core.card.Card.Facing;
+import com.josephmfaulkner.solitare95.core.card.Card.Rank;
+import com.josephmfaulkner.solitare95.core.card.Card.Suite;
 
 
 
