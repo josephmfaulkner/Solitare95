@@ -52,6 +52,8 @@ public class GameBoardFactory {
 		
 		gameBoard.getDeck().transfer(7, gameBoard.getTableau(7));
 		gameBoard.getTableau(7).getCards().getFirst().flip();
+
+		gameBoard.getDeck().getCards().get(0).flip();
 	}
 	
 	

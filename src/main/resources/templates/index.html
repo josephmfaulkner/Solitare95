@@ -1,17 +1,114 @@
 <!DOCTYPE html>
-
 <html>
+    <head xmlns:th="http://www.thymeleaf.org">
+        <title>Solitare95</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    </head>
+    <body bgcolor="#009900">
+        <table cellspacing="0" cellpadding="0">
+            <tr>
+                <td valign="top">
+                    <table>
+                            <tr>
+                                <td>
+                                    <img src="img/cards/back.jpg"/>
+                                </td>
+                            </tr>
 
-  <head>
-    <title>Good Thymes Virtual Grocery</title>
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-    <link rel="stylesheet" href="/style.css" />
-  </head>
+                            <tr>
+                                <td width="100" height="10">
 
-  <body>
+                                </td>
+                            </tr>
 
-    <p th:text="${session.board}"></p>
-  
-  </body>
+                            <th:block th:replace="fragments/tableau.html :: setTableau(tableauIndex = 1)"></th:block>
+                    </table>
+                </td>
+                <td valign="top">
+                    <table>
+                            <th:block th:replace="fragments/deck.html"></th:block>
 
+                            <tr>
+                                <td width="100" height="10">
+
+                                </td>
+                            </tr>
+
+                            <th:block th:replace="fragments/tableau.html :: setTableau(tableauIndex = 2)"></th:block>
+                    </table>
+                </td>
+                <td valign="top">
+                    <table>
+                            <tr>
+                                <td width="100" height="150">
+                                    <img src="img/cards/empty_bg.jpg"/>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td width="100" height="10">
+
+                                </td>
+                            </tr>
+
+                            <th:block th:replace="fragments/tableau.html :: setTableau(tableauIndex = 3)"></th:block>
+                    </table>
+                </td>
+                <td valign="top">
+                    <table>
+                            <th:block th:replace="fragments/foundation.html :: setFoundation(foundationIndex = 1)"></th:block>
+
+                            <tr>
+                                <td width="100" height="10">
+
+                                </td>
+                            </tr>
+
+                            <th:block th:replace="fragments/tableau.html :: setTableau(tableauIndex = 4)"></th:block>
+                    </table>
+                </td>
+                <td valign="top">
+                    <table>
+                            <th:block th:replace="fragments/foundation.html :: setFoundation(foundationIndex = 2)"></th:block>
+
+                            <tr>
+                                <td width="100" height="10">
+
+                                </td>
+                            </tr>
+
+                            <th:block th:replace="fragments/tableau.html :: setTableau(tableauIndex = 5)"></th:block>
+                    </table>
+                </td>
+                <td valign="top">
+                    <table>
+                            <th:block th:replace="fragments/foundation.html :: setFoundation(foundationIndex = 3)"></th:block>
+
+                            <tr>
+                                <td width="100" height="10">
+
+                                </td>
+                            </tr>
+
+                            <th:block th:replace="fragments/tableau.html :: setTableau(tableauIndex = 6)">
+
+
+                    </table>
+                </td>
+                <td valign="top">
+                    <table>
+                            <th:block th:replace="fragments/foundation.html :: setFoundation(foundationIndex = 4)"></th:block>
+
+                            <tr>
+                                <td width="100" height="10">
+
+                                </td>
+                            </tr>
+
+                            <th:block th:replace="fragments/tableau.html :: setTableau(tableauIndex = 7)">
+                    </table>
+                </td>
+            </tr>
+        </table>
+    </body>
 </html>

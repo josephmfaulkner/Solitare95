@@ -1,0 +1,12 @@
+<th:block th:fragment="setTableau(tableauIndex)">
+    <th:block 
+        th:each="i, iStat : ${#numbers.sequence(gameBoard.getTableau(tableauIndex).getCards().size() - 1, 0, -1)}" 
+        th:with="card=${gameBoard.getTableau(tableauIndex).getCards().get(i)}, cardImage=${T(com.josephmfaulkner.solitare95.utility.GuiUtils).imageFromCard(card,!iStat.last)}"
+    >
+        <tr>
+            <td>
+                <img th:src="@{${'img/cards/'+cardImage}}"/>
+            </td>
+        </tr>
+    </th:block>
+</th:block >

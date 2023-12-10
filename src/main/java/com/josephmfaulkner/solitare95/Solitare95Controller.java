@@ -8,18 +8,20 @@ import com.josephmfaulkner.solitare95.utility.GameBoardPrinter;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.ui.Model;
 
 @Controller
 public class Solitare95Controller {
 
 	@GetMapping("/")
-	public String index(HttpSession httpSession) {
+	public String index(Model model) {
 
 		GameBoard gameBoard = GameBoardFactory.newGame();
 
 		String gameBoardData = GameBoardPrinter.printBoard(gameBoard);
 
-		httpSession.setAttribute("board", gameBoardData);
+		model.addAttribute("gameBoard", gameBoard);
+		model.addAttribute("gameBoardString", gameBoardData);
 
 		return "index";
 		
