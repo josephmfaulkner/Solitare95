@@ -1,9 +1,0 @@
-insert into PERSON (ID, NAME) values (1, 'Joseph');
-insert into PERSON (ID, NAME) values (2, 'Marie');
-insert into PERSON (ID, NAME) values (3, 'Sravidha');
-insert into PERSON (ID, NAME) values (4, 'Julian');
-insert into PERSON (ID, NAME) values (5, 'Robert');
-insert into PERSON (ID, NAME) values (6, 'Sheppard');
-insert into PERSON (ID, NAME) values (7, 'Margaret');
-insert into PERSON (ID, NAME) values (8, 'William');
-insert into PERSON (ID, NAME) values (9, 'Elizabeth');
