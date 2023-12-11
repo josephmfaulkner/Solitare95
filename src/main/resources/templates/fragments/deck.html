@@ -1,8 +1,8 @@
 <th:block>
     <tr
         th:with="card=${gameBoard.getDeck().getCards().get(0)}, cardImage=${T(com.josephmfaulkner.solitare95.utility.GuiUtils).imageFromCard(card, false)}">
-        <td>
-            <img th:src="@{${'img/cards/'+cardImage}}"/>
+        <td border="1">
+            <img th:src="@{${'/img/cards/'+cardImage}}"/>
         </td>
     </tr>
 </th:block>

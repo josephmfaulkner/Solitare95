@@ -9,9 +9,12 @@
             <tr>
                 <td valign="top">
                     <table>
+                        
                             <tr>
                                 <td>
-                                    <img src="img/cards/back.jpg"/>
+                                    <a th:href="@{${'/drawcard/'+uuid}}">
+                                        <img src="/img/cards/back.jpg" alt="Draw a card" />
+                                    </a>
                                 </td>
                             </tr>
 
@@ -41,7 +44,7 @@
                     <table>
                             <tr>
                                 <td width="100" height="150">
-                                    <img src="img/cards/empty_bg.jpg"/>
+                                    <img src="/img/cards/empty_bg.jpg"/>
                                 </td>
                             </tr>
 
